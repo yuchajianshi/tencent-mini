@@ -3,6 +3,8 @@ from handler.base_handler import BaseHandler
 from datetime import datetime 
 import logging
 import urllib.request
+from Tools.log import logging
+from model.model import Story, LikeStory
 
 class StoryHandler(BaseHandler):
     def post(self):
@@ -14,12 +16,19 @@ class StoryHandler(BaseHandler):
         longitude = body["longitude"]
         latitude = body["latitude"]
         user_id = body["user_id"]
-        sql = '''
-		    INSERT INTO story(content, song_id, up, longitude, latitude, created_at, user_id)
-			VALUES("{0}", {1}, 0, {2}, {3}, "{4}", {5})
-        '''.format(content, song_id, longitude, latitude, datetime.utcnow(), user_id)
+
+        story = Story(
+            content=content,
+            song_id=song_id,
+            up=0,
+            longitude=longitude,
+            latitude=latitude,
+            created_at=datetime.utcnow(),
+            user_id=user_id
+        )
+
         try:
-            self.db.execute(sql)
+            self.db.add(story)
             self.db.commit()
         except Exception as e:
             logging.error(e)
@@ -66,6 +75,7 @@ class PraiseHandler(BaseHandler):
             SELECT * FROM likestory WHERE user_id = "{0}" AND story_id = {1}
         '''.format(postdata['user_id'], story_id)
         try:
+            self.db.query(LikeStory).filter(LikeStory.user_id==postdata['user_id']).all()
             results = self.db.execute(sql).fetchall()
         except Exception as e:
             err = {'code': 1, 'errinfo': '查询用户是否喜欢过该首歌曲时失败'}

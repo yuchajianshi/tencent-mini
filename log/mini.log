@@ -1,70 +1,33 @@
-Sun, 16 Jul 2017 18:55:44 selector_events.py[line:65] DEBUG Using selector: SelectSelector
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO SHOW VARIABLES LIKE 'sql_mode'
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO {}
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO SELECT DATABASE()
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO {}
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO {}
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO {}
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO {}
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO {}
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO DESCRIBE `user`
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO {}
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO DESCRIBE `comment`
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO {}
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO DESCRIBE `story`
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO {}
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO DESCRIBE `song`
-Sun, 16 Jul 2017 18:55:45 log.py[line:109] INFO {}
-Sun, 16 Jul 2017 18:55:49 log.py[line:109] INFO BEGIN (implicit)
-Sun, 16 Jul 2017 18:55:49 log.py[line:109] INFO 
-		    INSERT INTO story(content, song_id, up, longitude, latitude, created_at, user_id)
-			VALUES("啊～哟～哟～，这个节奏又潮又嗨，就像我的身材又胖又矮，哟～哟～", 293153, 0, 87.2, 11.5, "2017-07-16 10:55:49.344155", 10)
-        
-Sun, 16 Jul 2017 18:55:49 log.py[line:109] INFO {}
-Sun, 16 Jul 2017 18:55:49 log.py[line:109] INFO COMMIT
-Sun, 16 Jul 2017 18:55:49 log.py[line:109] INFO BEGIN (implicit)
-Sun, 16 Jul 2017 18:55:49 log.py[line:109] INFO 
+Sun, 16 Jul 2017 19:24:43 selector_events.py[line:65] DEBUG Using selector: SelectSelector
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO SHOW VARIABLES LIKE 'sql_mode'
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO {}
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO SELECT DATABASE()
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO {}
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO show collation where `Charset` = 'utf8' and `Collation` = 'utf8_bin'
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO {}
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO {}
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO {}
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8) COLLATE utf8_bin AS anon_1
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO {}
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO DESCRIBE `user`
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO {}
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO DESCRIBE `comment`
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO {}
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO DESCRIBE `story`
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO {}
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO DESCRIBE `song`
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO {}
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO DESCRIBE `likestory`
+Sun, 16 Jul 2017 19:24:43 log.py[line:109] INFO {}
+Sun, 16 Jul 2017 19:24:47 log.py[line:109] INFO BEGIN (implicit)
+Sun, 16 Jul 2017 19:24:47 log.py[line:109] INFO INSERT INTO story (content, song_id, up, user_id, latitude, longitude, created_at) VALUES (%(content)s, %(song_id)s, %(up)s, %(user_id)s, %(latitude)s, %(longitude)s, %(created_at)s)
+Sun, 16 Jul 2017 19:24:47 log.py[line:109] INFO {'content': '啊～哟～哟～，这个节奏又潮又嗨，就像我的身材又胖又矮，哟～哟～', 'song_id': 293153, 'up': 0, 'user_id': 10, 'latitude': 11.5, 'longitude': 87.2, 'created_at': datetime.datetime(2017, 7, 16, 11, 24, 47, 169731)}
+Sun, 16 Jul 2017 19:24:47 log.py[line:109] INFO COMMIT
+Sun, 16 Jul 2017 19:24:47 log.py[line:109] INFO BEGIN (implicit)
+Sun, 16 Jul 2017 19:24:47 log.py[line:109] INFO 
             SELECT story_id FROM story WHERE song_id = 293153 AND user_id = 10
         
-Sun, 16 Jul 2017 18:55:49 log.py[line:109] INFO {}
-Sun, 16 Jul 2017 18:55:50 web.py[line:2079] INFO 200 POST /story (::1) 1593.59ms
-Sun, 16 Jul 2017 18:56:01 log.py[line:109] INFO 
-		    INSERT INTO story(content, song_id, up, longitude, latitude, created_at, user_id)
-			VALUES("啊～哟～哟～，这个节奏又潮又嗨，就像我的身材又胖又矮，哟～哟～", 293153, 0, 87.2, 11.5, "2017-07-16 10:56:01.710255", 10)
-        
-Sun, 16 Jul 2017 18:56:01 log.py[line:109] INFO {}
-Sun, 16 Jul 2017 18:56:01 log.py[line:109] INFO COMMIT
-Sun, 16 Jul 2017 18:56:01 log.py[line:109] INFO BEGIN (implicit)
-Sun, 16 Jul 2017 18:56:01 log.py[line:109] INFO 
-            SELECT story_id FROM story WHERE song_id = 293153 AND user_id = 10
-        
-Sun, 16 Jul 2017 18:56:01 log.py[line:109] INFO {}
-Sun, 16 Jul 2017 18:56:03 web.py[line:2079] INFO 200 POST /story (::1) 1527.59ms
-Sun, 16 Jul 2017 18:58:51 log.py[line:109] INFO 
-		    INSERT INTO story(content, song_id, up, longitude, latitude, created_at, user_id)
-			VALUES("啊～哟～哟～，这个节奏又潮又嗨，就像我的身材又胖又矮，哟～哟～", 293153, 0, 87.2, 11.5, "2017-07-16 10:58:51.868265", 10)
-        
-Sun, 16 Jul 2017 18:58:51 log.py[line:109] INFO {}
-Sun, 16 Jul 2017 18:58:51 log.py[line:109] INFO COMMIT
-Sun, 16 Jul 2017 18:58:51 log.py[line:109] INFO BEGIN (implicit)
-Sun, 16 Jul 2017 18:58:51 log.py[line:109] INFO 
-            SELECT story_id FROM story WHERE song_id = 293153 AND user_id = 10
-        
-Sun, 16 Jul 2017 18:58:51 log.py[line:109] INFO {}
-Sun, 16 Jul 2017 18:58:53 web.py[line:2079] INFO 200 POST /story (::1) 1550.99ms
-Sun, 16 Jul 2017 18:59:40 log.py[line:109] INFO 
-		    INSERT INTO story(content, song_id, up, longitude, latitude, created_at, user_id)
-			VALUES("啊～哟～哟～，这个节奏又潮又嗨，就像我的身材又胖又矮，哟～哟～", 293153, 0, 87.2, 11.5, "2017-07-16 10:59:40.051467", 10)
-        
-Sun, 16 Jul 2017 18:59:40 log.py[line:109] INFO {}
-Sun, 16 Jul 2017 18:59:40 log.py[line:109] INFO COMMIT
-Sun, 16 Jul 2017 18:59:40 log.py[line:109] INFO BEGIN (implicit)
-Sun, 16 Jul 2017 18:59:40 log.py[line:109] INFO 
-            SELECT story_id FROM story WHERE song_id = 293153 AND user_id = 10
-        
-Sun, 16 Jul 2017 18:59:40 log.py[line:109] INFO {}
-Sun, 16 Jul 2017 18:59:41 web.py[line:2079] INFO 200 POST /story (::1) 1521.79ms
+Sun, 16 Jul 2017 19:24:47 log.py[line:109] INFO {}
+Sun, 16 Jul 2017 19:24:49 web.py[line:2079] INFO 200 POST /story (::1) 1869.39ms
