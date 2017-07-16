@@ -9,16 +9,14 @@ cursor = db.cursor()
 cursor.execute("SET NAMES utf8")
 cursor.execute("SET CHARACTER SET utf8")
 cursor.execute("SET character_set_connection=utf8")
-i=1;
 for songinfo in data:
     sql = '''
-        INSERT INTO story(storyID, content, songID, praisenum, longitude, latitude, time)
-        VALUES({0}, "{1}", "{2}", "{3}", "{4}", "{5}", "{6}")
-	    '''.format(songinfo['story_id'] + i, songinfo['content'] + str(i), songinfo['song_id'], songinfo['praisenim'], songinfo['longitude'], songinfo['latitude'],time.time())
+        INSERT INTO story(content, song_id, up, longitude, latitude, created_at, user_id)
+        VALUES("{0}", {1}, {2}, "{3}", "{4}", {5}, {6})
+	    '''.format(songinfo['content'], songinfo['song_id'], songinfo['up'], songinfo['longitude'], songinfo['latitude'], time.time(), songinfo['user_id'])
     try:
         cursor.execute(sql)
         db.commit()
-        i = i+1
     except :
         db.rollback()
         print("insert database error")

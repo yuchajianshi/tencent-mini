@@ -1,98 +1,58 @@
 [
 	{
-		"story_id":1,
-		"content":"mini test",
-		"song_id":209442,
-		"praisenim":0,
+		"content":"我们的关系回到云淡风轻，聊电影聊歌手聊天气，无关痛痒又波澜不惊，只是感情的事啊，再也不是彼此会提及的话题。像两个正派人物衣冠楚楚在谈经，不戏谑，不动心，不调情。",
+		"song_id": 237370,
+		"user_id": 10,
+		"up":0,
 		"longitude":113.940087,
 		"latitude":22.545928
 	},
 	{
-		"story_id":12211,
-		"content":"mini test",
-		"song_id":237370,
-		"praisenim":0,
+		"content":"在南门买烤红薯的时候耳机正放着这首歌，莫名感伤。当初也是买红薯，送去给站岗的你，在办公室同事一堆起哄下你收下了，却在转身又还给了我。最后那只红薯什么命运我忘了，但我知道，物是人非，我们再也不是当初青涩的模样。如今，我无法再跟你表达什么，只希望你一切安好，足矣。有些缘分，只能埋葬。",
+		"song_id": 237370,
+		"user_id": 10,
+		"up":0,
 		"longitude":113.940703,
 		"latitude":22.545819
 	},
 	{
-		"story_id":12211,
-		"content":"mini test",
-		"song_id":262565,
-		"praisenim":0,
+		"content":"你问我好不好，我说我很好。什么是很好，就是我一个人开车路过无边荒原，我闭眼站在深不可测的海边，我应付着生活里的些许算计，我抵抗着命运偶尔的不怀好意，那些时候我都想打个电话给你说，我怕。但最后我都忍住了，我不能再依赖你。我很好，虽然还想你，却仍旧学会放下了你。",
+		"song_id": 237370,
+		"user_id": 10,
+		"up":0,
 		"longitude":113.941368,
 		"latitude":22.546178
 	},
 	{
-		"story_id":12211,
-		"content":"mini test",
-		"song_id":276766,
-		"praisenim":0,
+		"content":"后来 有人会送你三十块一枝的玫瑰 三百块一支的口红 三千块一件的大衣 三万块一个的包 但你的爱情啊 是从三块钱一杯的奶茶开始的",
+		"song_id": 237370,
+		"user_id": 10,
+		"up":0,
 		"longitude":113.94029,
 		"latitude":22.546065
 	},
 	{
-		"story_id":12211,
-		"content":"mini test",
-		"song_id":280628,
-		"praisenim":0,
+		"content":"毕业那天，班长提议全班同学坐成一个圈， 每个人在纸条上写一个自己的秘密， 传给左边的人，这样每人分享一个自己秘密的同时也保守了一个别人的秘密。 我故意坐在她的左边。暗恋四年却没敢表白， 能知道一个她的秘密也好，我安慰自己。 传来的纸条上只有三个字：我爱你。",
+		"song_id": 237370,
+		"user_id": 10,
+		"up":0,
 		"longitude":113.940959,
 		"latitude":22.545606
 	},
 	{
-		"story_id":12211,
-		"content":"mini test",
-		"song_id":293153,
-		"praisenim":0,
+		"content":"小学二年级文艺晚会有个老师弹吉他独唱不在犹豫，那时候在东北农村，四处打听了好久才知道是beyond,我是个90后，童年就是听着beyond的歌过来的。可以说性格中有一大部分是beyond塑造的。在最难的日子里也是听着家驹咬牙硬挺过来的。谢谢你，家驹",
+		"song_id": 237370,
+		"user_id": 10,
+		"up":0,
 		"longitude":113.937918,
 		"latitude":22.548247
 	},
 	{
-		"story_id":12211,
-		"content":"mini test",
-		"song_id":312707,
-		"praisenim":0,
+		"content":"外公去世那天，我在回家的火车上听这首歌，当听到那句 “你回家了，我在等你呢”时，我眼睛湿润了",
+		"song_id": 237370,
+		"user_id": 10,
+		"up":0,
 		"longitude":113.941345,
 		"latitude":22.544238
-	},
-	{
-		"story_id":12211,
-		"content":"mini test",
-		"song_id":8867095,
-		"praisenim":0,
-		"longitude":113.950355,
-		"latitude":22.546007
-	},
-	{
-		"story_id":12211,
-		"content":"mini test",
-		"song_id":341541,
-		"praisenim":0,
-		"longitude":113.941965,
-		"latitude":22.546833
-	},
-	{
-		"story_id":12211,
-		"content":"mini test",
-		"song_id":593618,
-		"praisenim":0,
-		"longitude":113.940052,
-		"latitude":22.546307
-	},
-	{
-		"story_id":12211,
-		"content":"mini test",
-		"song_id":604087,
-		"praisenim":0,
-		"longitude":113.941085,
-		"latitude":22.546099
-	},
-	{
-		"story_id":12211,
-		"content":"mini test",
-		"song_id":621650,
-		"praisenim":0,
-		"longitude":113.940034,
-		"latitude":22.545932
 	}
 ]

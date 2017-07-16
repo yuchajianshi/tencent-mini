@@ -17,6 +17,7 @@ class SongStoryHandler(BaseHandler):
 
         try:
             sql = "select * from story where song_id = " + str(song_id)
+            print(sql)
             rows = self.db.execute(sql).fetchall()
         except Exception as e:
             rep["code"] = 1

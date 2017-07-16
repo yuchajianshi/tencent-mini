@@ -1,2 +1,3 @@
 # tencent-mini
 readsong.py用于将json文件里的歌曲信息写到云数据库中，要运行这个程序需要安装pymysql
+前后端数据通信采用json格式
